@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>బొండపల్లి పాఠశాలలు & కళాశాలల వివరాలు | Schools & Colleges - Bondapalle</title>
-    <meta name="description" content="ఆంధ్రప్రదేశ్ పాఠశాల విద్యాశాఖ మరియు UDISE+ డేటా ప్రకారం బొండపల్లి గ్రామ పరిధిలోని అన్ని విద్యాసంస్థల అధికారిక వివరాలు. Official directory of schools in Bondapalle.">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="ఆంధ్రప్రదేశ్ పాఠశాల విద్యాశాఖ, SBTET మరియు UDISE+ డేటా ప్రకారం బొండపల్లి గ్రామ పరిధిలోని అన్ని విద్యాసంస్థల అధికారిక వివరాలు. Official directory of schools & polytechnic colleges in Bondapalle.">
+    <link rel="stylesheet" href="style.css?v=20261121_2">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -39,36 +42,77 @@
         <section class="section">
             <div class="section-header">
                 <h2 data-te="పాఠశాలలు & కళాశాలల డైరెక్టరీ" data-en="Schools & Colleges Directory">పాఠశాలలు & కళాశాలల డైరెక్టరీ</h2>
-                <p data-te="ఆంధ్రప్రదేశ్ పాఠశాల విద్యాశాఖ మరియు UDISE+ పోర్టల్ డేటా ప్రకారం బొండపల్లి గ్రామ పరిధిలోని విద్యాసంస్థల సమగ్ర సమాచారం" data-en="Official records of educational institutions in Bondapalli village and its hamlets mapped with AP School Education Department & UDISE+">ఆంధ్రప్రదేశ్ పాఠశాల విద్యాశాఖ మరియు UDISE+ పోర్టల్ డేటా ప్రకారం బొండపల్లి గ్రామ పరిధిలోని విద్యాసంస్థల సమగ్ర సమాచారం</p>
+                <p data-te="ఆంధ్రప్రదేశ్ పాఠశాల విద్యాశాఖ, SBTET మరియు UDISE+ పోర్టల్ డేటా ప్రకారం బొండపల్లి గ్రామ పరిధిలోని విద్యాసంస్థల సమగ్ర సమాచారం" data-en="Official records of educational institutions in Bondapalli village and its hamlets mapped with AP School Education, SBTET & UDISE+">ఆంధ్రప్రదేశ్ పాఠశాల విద్యాశాఖ, SBTET మరియు UDISE+ పోర్టల్ డేటా ప్రకారం బొండపల్లి గ్రామ పరిధిలోని విద్యాసంస్థల సమగ్ర సమాచారం</p>
             </div>
 
             <!-- Official Portals Notice Box -->
             <div class="school-portal-notice">
                 <p>
                     <i class="fa-solid fa-circle-info"></i> 
-                    <span data-te="అధికారిక విద్యాశాఖ & UDISE+ సమాచార వేదికలు:" data-en="Official School Education & UDISE+ Portals:">అధికారిక విద్యాశాఖ & UDISE+ సమాచార వేదికలు:</span>
+                    <span data-te="అధికారిక విద్యాశాఖ & బోర్డు సమాచార వేదికలు:" data-en="Official Education & Board Portals:">అధికారిక విద్యాశాఖ & బోర్డు సమాచార వేదికలు:</span>
                 </p>
                 <div class="portal-links">
                     <a href="https://cse.ap.gov.in/" target="_blank" rel="noopener noreferrer" class="portal-badge-link">
                         <span>CSE AP Portal</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
-                    <a href="https://src.udiseplus.gov.in/" target="_blank" rel="noopener noreferrer" class="portal-badge-link">
-                        <span>UDISE+ KYS Portal</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
                     <a href="https://sbtet.ap.gov.in/" target="_blank" rel="noopener noreferrer" class="portal-badge-link">
                         <span>SBTET AP</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="https://src.udiseplus.gov.in/" target="_blank" rel="noopener noreferrer" class="portal-badge-link">
+                        <span>UDISE+ KYS Portal</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </div>
             </div>
 
             <!-- School Search Bar -->
             <div class="search-container">
-                <input type="text" id="school-search" class="search-input" onkeyup="filterSchools()" placeholder="పాఠశాల పేరు లేదా UDISE కోడ్‌తో వెతకండి... / Search by school name or UDISE code...">
+                <input type="text" id="school-search" class="search-input" onkeyup="filterSchools()" placeholder="కళాశాల / పాఠశాల పేరు లేదా కోడ్‌తో వెతకండి... / Search by name or code...">
             </div>
 
-            <!-- Grid of All 9 Schools -->
+            <!-- Grid of All 10 Institutions (Colleges & Higher Education first) -->
             <div class="school-grid">
-                <!-- 1. ZPHS Bondapalli -->
+
+                <!-- 1. Aksharaa Polytechnic (Sai Krishna Polytechnic) - Featured Card #1 -->
+                <div class="school-item featured-college">
+                    <div class="school-item-header">
+                        <div class="school-item-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <div>
+                            <span class="featured-badge" data-te="పాలిటెక్నిక్ ఇంజనీరింగ్ కళాశాల" data-en="Polytechnic College">పాలిటెక్నిక్ ఇంజనీరింగ్ కళాశాల</span>
+                            <br>
+                            <a href="https://www.aksharaapolytechnic.ac.in/" target="_blank" rel="noopener noreferrer" class="school-title-link">
+                                <span data-te="అక్షర పాలిటెక్నిక్ కళాశాల (సాయి కృష్ణ పాలిటెక్నిక్), బొండపల్లి" data-en="Aksharaa Polytechnic (formerly Sai Krishna Polytechnic), Bondapalli">అక్షర పాలిటెక్నిక్ కళాశాల (సాయి కృష్ణ పాలిటెక్నిక్), బొండపల్లి</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div class="class-tag" data-te="ప్రైవేట్ పాలిటెక్నిక్ డిప్లొమా ఇంజనీరింగ్ కళాశాల (AICTE & SBTET AP)" data-en="Private Polytechnic Diploma Engineering College (AICTE & SBTET AP)">ప్రైవేట్ పాలిటెక్నిక్ డిప్లొమా ఇంజనీరింగ్ కళాశాల (AICTE & SBTET AP)</div>
+                        </div>
+                    </div>
+                    <div class="school-item-meta">
+                        <span class="udise-tag">POLYCET కోడ్: ARPV (218)</span>
+                        <span class="class-tag" data-te="కోర్సులు: డిప్లొమా (Civil, Mech, EEE, ECE)" data-en="Courses: Diploma (Civil, Mech, EEE, ECE)">కోర్సులు: డిప్లొమా (Civil, Mech, EEE, ECE)</span>
+                    </div>
+                </div>
+
+                <!-- 2. Sri Sai Siddhartha Junior College - Featured Card #2 -->
+                <div class="school-item featured-college">
+                    <div class="school-item-header">
+                        <div class="school-item-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                        <div>
+                            <span class="featured-badge" data-te="జూనియర్ కళాశాల (+2)" data-en="Junior College (+2)">జూనియర్ కళాశాల (+2)</span>
+                            <br>
+                            <a href="https://schools.org.in/vizianagaram/28122001910/sri-sai-siddhartha-junior-college.html" target="_blank" rel="noopener noreferrer" class="school-title-link">
+                                <span data-te="శ్రీ సాయి సిద్ధార్థ జూనియర్ కళాశాల, బొండపల్లి" data-en="Sri Sai Siddhartha Junior College, Bondapalli">శ్రీ సాయి సిద్ధార్థ జూనియర్ కళాశాల, బొండపల్లి</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div class="class-tag" data-te="ఇంటర్మీడియట్ కళాశాల | తరగతులు: 11 నుండి 12" data-en="Intermediate Junior College | Classes: 11 to 12">ఇంటర్మీడియట్ కళాశాల | తరగతులు: 11 నుండి 12</div>
+                        </div>
+                    </div>
+                    <div class="school-item-meta">
+                        <span class="udise-tag">UDISE: 28122001910</span>
+                        <span class="class-tag" data-te="బోర్డ్ ఆఫ్ ఇంటర్మీడియట్ (BIEAP)" data-en="Board of Intermediate (BIEAP)">బోర్డ్ ఆఫ్ ఇంటర్మీడియట్ (BIEAP)</span>
+                    </div>
+                </div>
+
+                <!-- 3. ZPHS Bondapalli -->
                 <div class="school-item">
                     <div class="school-item-header">
                         <div class="school-item-icon"><i class="fa-solid fa-school"></i></div>
@@ -86,7 +130,7 @@
                     </div>
                 </div>
 
-                <!-- 2. KGBV Bondapalli -->
+                <!-- 4. KGBV Bondapalli -->
                 <div class="school-item">
                     <div class="school-item-header">
                         <div class="school-item-icon"><i class="fa-solid fa-school-flag"></i></div>
@@ -104,7 +148,7 @@
                     </div>
                 </div>
 
-                <!-- 3. MPPS Bondapalli (Main / R) -->
+                <!-- 5. MPPS Bondapalli (Main / R) -->
                 <div class="school-item">
                     <div class="school-item-header">
                         <div class="school-item-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
@@ -122,7 +166,7 @@
                     </div>
                 </div>
 
-                <!-- 4. MPPS Bondapalli (SPL) -->
+                <!-- 6. MPPS Bondapalli (SPL) -->
                 <div class="school-item">
                     <div class="school-item-header">
                         <div class="school-item-icon"><i class="fa-solid fa-book-open-reader"></i></div>
@@ -140,7 +184,7 @@
                     </div>
                 </div>
 
-                <!-- 5. MPPS Bondapalli (H) -->
+                <!-- 7. MPPS Bondapalli (H) -->
                 <div class="school-item">
                     <div class="school-item-header">
                         <div class="school-item-icon"><i class="fa-solid fa-children"></i></div>
@@ -158,7 +202,7 @@
                     </div>
                 </div>
 
-                <!-- 6. MPPS Chandakapeta -->
+                <!-- 8. MPPS Chandakapeta -->
                 <div class="school-item">
                     <div class="school-item-header">
                         <div class="school-item-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
@@ -176,7 +220,7 @@
                     </div>
                 </div>
 
-                <!-- 7. MPPS Gollalapeta -->
+                <!-- 9. MPPS Gollalapeta -->
                 <div class="school-item">
                     <div class="school-item-header">
                         <div class="school-item-icon"><i class="fa-solid fa-house-chimney-user"></i></div>
@@ -194,7 +238,7 @@
                     </div>
                 </div>
 
-                <!-- 8. MPPS Geddapeta -->
+                <!-- 10. MPPS Geddapeta -->
                 <div class="school-item">
                     <div class="school-item-header">
                         <div class="school-item-icon"><i class="fa-solid fa-house-user"></i></div>
@@ -212,41 +256,6 @@
                     </div>
                 </div>
 
-                <!-- 9. Sri Sai Siddhartha Junior College -->
-                <div class="school-item">
-                    <div class="school-item-header">
-                        <div class="school-item-icon"><i class="fa-solid fa-user-graduate"></i></div>
-                        <div>
-                            <a href="https://schools.org.in/vizianagaram/28122001910/sri-sai-siddhartha-junior-college.html" target="_blank" rel="noopener noreferrer" class="school-title-link">
-                                <span data-te="శ్రీ సాయి సిద్ధార్థ జూనియర్ కళాశాల, బొండపల్లి" data-en="Sri Sai Siddhartha Junior College, Bondapalli">శ్రీ సాయి సిద్ధార్థ జూనియర్ కళాశాల, బొండపల్లి</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <div class="class-tag" data-te="ఇంటర్మీడియట్ కళాశాల | తరగతులు: 11 నుండి 12" data-en="Intermediate Junior College | Classes: 11 to 12">ఇంటర్మీడియట్ కళాశాల | తరగతులు: 11 నుండి 12</div>
-                        </div>
-                    </div>
-                    <div class="school-item-meta">
-                        <span class="udise-tag">UDISE: 28122001910</span>
-                        <span class="class-tag" data-te="బోర్డ్ ఆఫ్ ఇంటర్మీడియట్ (BIEAP)" data-en="Board of Intermediate (BIEAP)">బోర్డ్ ఆఫ్ ఇంటర్మీడియట్ (BIEAP)</span>
-                    </div>
-                </div>
-
-                <!-- 10. Aksharaa Polytechnic (Sai Krishna Polytechnic) -->
-                <div class="school-item">
-                    <div class="school-item-header">
-                        <div class="school-item-icon"><i class="fa-solid fa-microchip"></i></div>
-                        <div>
-                            <a href="https://www.aksharaapolytechnic.ac.in/" target="_blank" rel="noopener noreferrer" class="school-title-link">
-                                <span data-te="అక్షర పాలిటెక్నిక్ కళాశాల (సాయి కృష్ణ పాలిటెక్నిక్), బొండపల్లి" data-en="Aksharaa Polytechnic (formerly Sai Krishna Polytechnic), Bondapalli">అక్షర పాలిటెక్నిక్ కళాశాల (సాయి కృష్ణ పాలిటెక్నిక్), బొండపల్లి</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <div class="class-tag" data-te="ప్రైవేట్ పాలిటెక్నిక్ డిప్లొమా ఇంజనీరింగ్ కళాశాల (AICTE & SBTET AP)" data-en="Private Polytechnic Diploma Engineering College (AICTE & SBTET AP)">ప్రైవేట్ పాలిటెక్నిక్ డిప్లొమా ఇంజనీరింగ్ కళాశాల (AICTE & SBTET AP)</div>
-                        </div>
-                    </div>
-                    <div class="school-item-meta">
-                        <span class="udise-tag">POLYCET కోడ్: ARPV (218)</span>
-                        <span class="class-tag" data-te="కోర్సులు: డిప్లొమా ఇన్ ఇంజనీరింగ్ (Civil, Mech, EEE, ECE)" data-en="Courses: Diploma in Engg (Civil, Mech, EEE, ECE)">కోర్సులు: డిప్లొమా ఇన్ ఇంజనీరింగ్ (Civil, Mech, EEE, ECE)</span>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
@@ -263,6 +272,6 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=20261121_2"></script>
 </body>
 </html>
