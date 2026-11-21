@@ -116,6 +116,10 @@ function updateInterfaceLanguage() {
             logoText.innerHTML = currentLanguage === 'te' 
                 ? `<i class="fa-solid fa-hospital"></i> బొండపల్లి ప్రాథమిక ఆరోగ్య కేంద్రం` 
                 : `<i class="fa-solid fa-hospital"></i> PHC Bondapalle`;
+        } else if (window.location.pathname.includes("irrigation.html")) {
+            logoText.innerHTML = currentLanguage === 'te' 
+                ? `<i class="fa-solid fa-water"></i> బొండపల్లి జలవనరులు` 
+                : `<i class="fa-solid fa-water"></i> Bondapalle Water Resources`;
         } else {
             logoText.innerHTML = currentLanguage === 'te' 
                 ? `<i class="fa-solid fa-gopuram"></i> బొండపల్లి` 
@@ -127,6 +131,10 @@ function updateInterfaceLanguage() {
             logoSubtitle.innerText = currentLanguage === 'te' 
                 ? "వైద్య మరియు కుటుంబ సంక్షేమ శాఖ, విజయనగరం జిల్లా" 
                 : "Dept of Health & Family Welfare, Vizianagaram District";
+        } else if (window.location.pathname.includes("irrigation.html")) {
+            logoSubtitle.innerText = currentLanguage === 'te' 
+                ? "జలవనరుల శాఖ & చిన్నతరహా నీటిపారుదల, విజయనగరం జిల్లా" 
+                : "Water Resources & Minor Irrigation Dept, Vizianagaram";
         } else {
             logoSubtitle.innerText = currentLanguage === 'te' ? "విజయనగరం జిల్లా, ఆంధ్రప్రదేశ్" : "Vizianagaram District, Andhra Pradesh";
         }
@@ -232,6 +240,23 @@ function openPhcModal() {
 
 function closePhcModal() {
     const modal = document.getElementById("phc-modal");
+    if (modal) {
+        modal.classList.remove("active");
+        document.body.style.overflow = "";
+    }
+}
+
+// Modal Management for Irrigation Tanks & Wells
+function openIrrigationModal() {
+    const modal = document.getElementById("irrigation-modal");
+    if (modal) {
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+    }
+}
+
+function closeIrrigationModal() {
+    const modal = document.getElementById("irrigation-modal");
     if (modal) {
         modal.classList.remove("active");
         document.body.style.overflow = "";
