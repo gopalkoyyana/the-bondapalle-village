@@ -186,3 +186,56 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+// Modal Management for Schools & Colleges
+function openSchoolsModal() {
+    const modal = document.getElementById("schools-modal");
+    if (modal) {
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+    }
+}
+
+function closeSchoolsModal() {
+    const modal = document.getElementById("schools-modal");
+    if (modal) {
+        modal.classList.remove("active");
+        document.body.style.overflow = "";
+    }
+}
+
+// Close modal on backdrop click or ESC
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("schools-modal");
+    if (modal) {
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                closeSchoolsModal();
+            }
+        });
+    }
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            closeSchoolsModal();
+        }
+    });
+});
+
+// Filter schools in standalone schools page if search input exists
+function filterSchools() {
+    const searchInput = document.getElementById("school-search");
+    if (!searchInput) return;
+    const query = searchInput.value.toLowerCase().trim();
+    const schoolItems = document.querySelectorAll(".school-item");
+
+    schoolItems.forEach(item => {
+        const text = item.innerText.toLowerCase();
+        if (text.includes(query)) {
+            item.style.display = "flex";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+

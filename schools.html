@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="te" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>బొండపల్లి పాఠశాలలు & కళాశాలల వివరాలు | Schools & Colleges - Bondapalle</title>
+    <meta name="description" content="ఆంధ్రప్రదేశ్ పాఠశాల విద్యాశాఖ మరియు UDISE+ డేటా ప్రకారం బొండపల్లి గ్రామ పరిధిలోని అన్ని విద్యాసంస్థల అధికారిక వివరాలు. Official directory of schools in Bondapalle.">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo-section">
+                <h1 id="nav-logo-text"><i class="fa-solid fa-graduation-cap"></i> బొండపల్లి విద్యాసంస్థలు</h1>
+                <p id="nav-subtitle-text">విజయనగరం జిల్లా, ఆంధ్రప్రదేశ్</p>
+            </div>
+            <div class="page-header-actions">
+                <a href="index.html" class="btn-lang" title="Go back to village homepage">
+                    <i class="fa-solid fa-house"></i>
+                    <span data-te="గ్రామ వెబ్‌సైట్" data-en="Home">గ్రామ వెబ్‌సైట్</span>
+                </a>
+                <button type="button" class="btn-lang" onclick="window.close()" title="Close this window">
+                    <i class="fa-solid fa-xmark"></i>
+                    <span data-te="విండో మూసివేయి" data-en="Close Window">విండో మూసివేయి</span>
+                </button>
+                <button class="btn-lang" id="lang-toggle" onclick="toggleLanguage()">English</button>
+                <button class="btn-icon" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main style="margin-top: 3rem;">
+        <section class="section">
+            <div class="section-header">
+                <h2 data-te="పాఠశాలలు & కళాశాలల డైరెక్టరీ" data-en="Schools & Colleges Directory">పాఠశాలలు & కళాశాలల డైరెక్టరీ</h2>
+                <p data-te="ఆంధ్రప్రదేశ్ పాఠశాల విద్యాశాఖ మరియు UDISE+ పోర్టల్ డేటా ప్రకారం బొండపల్లి గ్రామ పరిధిలోని విద్యాసంస్థల సమగ్ర సమాచారం" data-en="Official records of educational institutions in Bondapalli village and its hamlets mapped with AP School Education Department & UDISE+">ఆంధ్రప్రదేశ్ పాఠశాల విద్యాశాఖ మరియు UDISE+ పోర్టల్ డేటా ప్రకారం బొండపల్లి గ్రామ పరిధిలోని విద్యాసంస్థల సమగ్ర సమాచారం</p>
+            </div>
+
+            <!-- Official Portals Notice Box -->
+            <div class="school-portal-notice">
+                <p>
+                    <i class="fa-solid fa-circle-info"></i> 
+                    <span data-te="అధికారిక విద్యాశాఖ & UDISE+ సమాచార వేదికలు:" data-en="Official School Education & UDISE+ Portals:">అధికారిక విద్యాశాఖ & UDISE+ సమాచార వేదికలు:</span>
+                </p>
+                <div class="portal-links">
+                    <a href="https://cse.ap.gov.in/" target="_blank" rel="noopener noreferrer" class="portal-badge-link">
+                        <span>CSE AP Portal</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="https://src.udiseplus.gov.in/" target="_blank" rel="noopener noreferrer" class="portal-badge-link">
+                        <span>UDISE+ KYS Portal</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- School Search Bar -->
+            <div class="search-container">
+                <input type="text" id="school-search" class="search-input" onkeyup="filterSchools()" placeholder="పాఠశాల పేరు లేదా UDISE కోడ్‌తో వెతకండి... / Search by school name or UDISE code...">
+            </div>
+
+            <!-- Grid of All 9 Schools -->
+            <div class="school-grid">
+                <!-- 1. ZPHS Bondapalli -->
+                <div class="school-item">
+                    <div class="school-item-header">
+                        <div class="school-item-icon"><i class="fa-solid fa-school"></i></div>
+                        <div>
+                            <a href="https://schools.org.in/vizianagaram/28122001908/zphs-bondapalli.html" target="_blank" rel="noopener noreferrer" class="school-title-link">
+                                <span data-te="జిల్లా పరిషత్ ఉన్నత పాఠశాల (ZPHS), బొండపల్లి" data-en="Zilla Parishad High School (ZPHS), Bondapalli">జిల్లా పరిషత్ ఉన్నత పాఠశాల (ZPHS), బొండపల్లి</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div class="class-tag" data-te="ప్రభుత్వ ఉన్నత పాఠశాల | తరగతులు: 6 నుండి 10" data-en="Govt High School | Classes: 6 to 10">ప్రభుత్వ ఉన్నత పాఠశాల | తరగతులు: 6 నుండి 10</div>
+                        </div>
+                    </div>
+                    <div class="school-item-meta">
+                        <span class="udise-tag">UDISE: 28122001908</span>
+                        <span class="class-tag" data-te="క్లస్టర్: బొండపల్లి" data-en="Cluster: Bondapalli">క్లస్టర్: బొండపల్లి</span>
+                    </div>
+                </div>
+
+                <!-- 2. KGBV Bondapalli -->
+                <div class="school-item">
+                    <div class="school-item-header">
+                        <div class="school-item-icon"><i class="fa-solid fa-school-flag"></i></div>
+                        <div>
+                            <a href="https://schools.org.in/vizianagaram/28122001909/kgbv-bondapalli.html" target="_blank" rel="noopener noreferrer" class="school-title-link">
+                                <span data-te="కస్తూరిబా గాంధీ బాలికా విద్యాలయం (KGBV), బొండపల్లి" data-en="Kasturba Gandhi Balika Vidyalaya (KGBV), Bondapalli">కస్తూరిబా గాంధీ బాలికా విద్యాలయం (KGBV), బొండపల్లి</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div class="class-tag" data-te="బాలికల గురుకులం | తరగతులు: 6 నుండి 12" data-en="Girls Residential School | Classes: 6 to 12">బాలికల గురుకులం | తరగతులు: 6 నుండి 12</div>
+                        </div>
+                    </div>
+                    <div class="school-item-meta">
+                        <span class="udise-tag">UDISE: 28122001909</span>
+                        <span class="class-tag" data-te="సమగ్ర శిక్షా అభియాన్" data-en="Samagra Shiksha AP">సమగ్ర శిక్షా అభియాన్</span>
+                    </div>
+                </div>
+
+                <!-- 3. MPPS Bondapalli (Main / R) -->
+                <div class="school-item">
+                    <div class="school-item-header">
+                        <div class="school-item-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div>
+                            <a href="https://schools.org.in/vizianagaram/28122001901/mpps-bondapalli-r.html" target="_blank" rel="noopener noreferrer" class="school-title-link">
+                                <span data-te="మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS - మెయిన్), బొండపల్లి" data-en="Mandal Parishad Primary School (MPPS - Main), Bondapalli">మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS - మెయిన్), బొండపల్లి</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div class="class-tag" data-te="ప్రభుత్వ ప్రాథమిక పాఠశాల | తరగతులు: 1 నుండి 5" data-en="Govt Primary School | Classes: 1 to 5">ప్రభుత్వ ప్రాథమిక పాఠశాల | తరగతులు: 1 నుండి 5</div>
+                        </div>
+                    </div>
+                    <div class="school-item-meta">
+                        <span class="udise-tag">UDISE: 28122001901</span>
+                        <span class="class-tag" data-te="స్థాపన: 1948" data-en="Established: 1948">స్థాపన: 1948</span>
+                    </div>
+                </div>
+
+                <!-- 4. MPPS Bondapalli (SPL) -->
+                <div class="school-item">
+                    <div class="school-item-header">
+                        <div class="school-item-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                        <div>
+                            <a href="https://schools.org.in/vizianagaram/28122001902/mpps-bondapalli-spl.html" target="_blank" rel="noopener noreferrer" class="school-title-link">
+                                <span data-te="మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS - స్పెషల్), బొండపల్లి" data-en="Mandal Parishad Primary School (MPPS - Special), Bondapalli">మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS - స్పెషల్), బొండపల్లి</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div class="class-tag" data-te="ప్రభుత్వ ప్రాథమిక పాఠశాల | తరగతులు: 1 నుండి 5" data-en="Govt Primary School | Classes: 1 to 5">ప్రభుత్వ ప్రాథమిక పాఠశాల | తరగతులు: 1 నుండి 5</div>
+                        </div>
+                    </div>
+                    <div class="school-item-meta">
+                        <span class="udise-tag">UDISE: 28122001902</span>
+                        <span class="class-tag" data-te="మాధ్యమం: తెలుగు / ఇంగ్లీష్" data-en="Medium: Telugu / English">మాధ్యమం: తెలుగు / ఇంగ్లీష్</span>
+                    </div>
+                </div>
+
+                <!-- 5. MPPS Bondapalli (H) -->
+                <div class="school-item">
+                    <div class="school-item-header">
+                        <div class="school-item-icon"><i class="fa-solid fa-children"></i></div>
+                        <div>
+                            <a href="https://schools.org.in/vizianagaram/28122001903/mpps-bondapalli-h.html" target="_blank" rel="noopener noreferrer" class="school-title-link">
+                                <span data-te="మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS - హరిజనవాడ), బొండపల్లి" data-en="Mandal Parishad Primary School (MPPS - Harijanawada), Bondapalli">మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS - హరిజనవాడ), బొండపల్లి</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div class="class-tag" data-te="ప్రభుత్వ ప్రాథమిక పాఠశాల | తరగతులు: 1 నుండి 5" data-en="Govt Primary School | Classes: 1 to 5">ప్రభుత్వ ప్రాథమిక పాఠశాల | తరగతులు: 1 నుండి 5</div>
+                        </div>
+                    </div>
+                    <div class="school-item-meta">
+                        <span class="udise-tag">UDISE: 28122001903</span>
+                        <span class="class-tag" data-te="స్థాపన: 1984" data-en="Established: 1984">స్థాపన: 1984</span>
+                    </div>
+                </div>
+
+                <!-- 6. MPPS Chandakapeta -->
+                <div class="school-item">
+                    <div class="school-item-header">
+                        <div class="school-item-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+                        <div>
+                            <a href="https://schools.org.in/vizianagaram/28122001906/mpps-chandakapeta.html" target="_blank" rel="noopener noreferrer" class="school-title-link">
+                                <span data-te="మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS), చందకపేట" data-en="Mandal Parishad Primary School (MPPS), Chandakapeta">మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS), చందకపేట</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div class="class-tag" data-te="ఆవాస గ్రామ పాఠశాల | తరగతులు: 1 నుండి 5" data-en="Hamlet Primary School | Classes: 1 to 5">ఆవాస గ్రామ పాఠశాల | తరగతులు: 1 నుండి 5</div>
+                        </div>
+                    </div>
+                    <div class="school-item-meta">
+                        <span class="udise-tag">UDISE: 28122001906</span>
+                        <span class="class-tag" data-te="ఆవాసం: చందకపేట" data-en="Hamlet: Chandakapeta">ఆవాసం: చందకపేట</span>
+                    </div>
+                </div>
+
+                <!-- 7. MPPS Gollalapeta -->
+                <div class="school-item">
+                    <div class="school-item-header">
+                        <div class="school-item-icon"><i class="fa-solid fa-house-chimney-user"></i></div>
+                        <div>
+                            <a href="https://schools.org.in/vizianagaram/28122001905/mpps-gollalapeta.html" target="_blank" rel="noopener noreferrer" class="school-title-link">
+                                <span data-te="మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS), గొల్లలపేట" data-en="Mandal Parishad Primary School (MPPS), Gollalapeta">మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS), గొల్లలపేట</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div class="class-tag" data-te="ఆవాస గ్రామ పాఠశాల | తరగతులు: 1 నుండి 5" data-en="Hamlet Primary School | Classes: 1 to 5">ఆవాస గ్రామ పాఠశాల | తరగతులు: 1 నుండి 5</div>
+                        </div>
+                    </div>
+                    <div class="school-item-meta">
+                        <span class="udise-tag">UDISE: 28122001905</span>
+                        <span class="class-tag" data-te="ఆవాసం: గొల్లలపేట" data-en="Hamlet: Gollalapeta">ఆవాసం: గొల్లలపేట</span>
+                    </div>
+                </div>
+
+                <!-- 8. MPPS Geddapeta -->
+                <div class="school-item">
+                    <div class="school-item-header">
+                        <div class="school-item-icon"><i class="fa-solid fa-house-user"></i></div>
+                        <div>
+                            <a href="https://schools.org.in/vizianagaram/28122001904/mpps-geddapeta.html" target="_blank" rel="noopener noreferrer" class="school-title-link">
+                                <span data-te="మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS), గెడ్డపేట" data-en="Mandal Parishad Primary School (MPPS), Geddapeta">మండల పరిషత్ ప్రాథమిక పాఠశాల (MPPS), గెడ్డపేట</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div class="class-tag" data-te="ఆవాస గ్రామ పాఠశాల | తరగతులు: 1 నుండి 5" data-en="Hamlet Primary School | Classes: 1 to 5">ఆవాస గ్రామ పాఠశాల | తరగతులు: 1 నుండి 5</div>
+                        </div>
+                    </div>
+                    <div class="school-item-meta">
+                        <span class="udise-tag">UDISE: 28122001904</span>
+                        <span class="class-tag" data-te="ఆవాసం: గెడ్డపేట" data-en="Hamlet: Geddapeta">ఆవాసం: గెడ్డపేట</span>
+                    </div>
+                </div>
+
+                <!-- 9. Sri Sai Siddhartha Junior College -->
+                <div class="school-item">
+                    <div class="school-item-header">
+                        <div class="school-item-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                        <div>
+                            <a href="https://schools.org.in/vizianagaram/28122001910/sri-sai-siddhartha-junior-college.html" target="_blank" rel="noopener noreferrer" class="school-title-link">
+                                <span data-te="శ్రీ సాయి సిద్ధార్థ జూనియర్ కళాశాల, బొండపల్లి" data-en="Sri Sai Siddhartha Junior College, Bondapalli">శ్రీ సాయి సిద్ధార్థ జూనియర్ కళాశాల, బొండపల్లి</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div class="class-tag" data-te="ఇంటర్మీడియట్ కళాశాల | తరగతులు: 11 నుండి 12" data-en="Intermediate Junior College | Classes: 11 to 12">ఇంటర్మీడియట్ కళాశాల | తరగతులు: 11 నుండి 12</div>
+                        </div>
+                    </div>
+                    <div class="school-item-meta">
+                        <span class="udise-tag">UDISE: 28122001910</span>
+                        <span class="class-tag" data-te="బోర్డ్ ఆఫ్ ఇంటర్మీడియట్ (BIEAP)" data-en="Board of Intermediate (BIEAP)">బోర్డ్ ఆఫ్ ఇంటర్మీడియట్ (BIEAP)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p id="footer-text" data-te="&copy; 2026 బొండపల్లి గ్రామ పంచాయితీ. అన్ని హక్కులు ప్రత్యేకించబడినవి." data-en="&copy; 2026 Bondapalle Gram Panchayat. All Rights Reserved.">&copy; 2026 బొండపల్లి గ్రామ పంచాయితీ. అన్ని హక్కులు ప్రత్యేకించబడినవి.</p>
+            <div class="footer-links">
+                <a href="index.html" data-te="ముందుపేజీ" data-en="Home">ముందుపేజీ</a>
+                <a href="index.html#infrastructure" data-te="సదుపాయాలు" data-en="Infrastructure">సదుపాయాలు</a>
+                <a href="index.html#hamlets" data-te="మండల పరిధి" data-en="Mandal Area">మండల పరిధి</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
