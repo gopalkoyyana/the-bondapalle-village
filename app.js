@@ -107,12 +107,29 @@ function updateInterfaceLanguage() {
     // Update logo text and subtitle
     const logoText = document.getElementById("nav-logo-text");
     const logoSubtitle = document.getElementById("nav-subtitle-text");
-    if (currentLanguage === 'te') {
-        logoText.innerHTML = `<i class="fa-solid fa-gopuram"></i> బొండపల్లి`;
-        logoSubtitle.innerText = "విజయనగరం జిల్లా, ఆంధ్రప్రదేశ్";
-    } else {
-        logoText.innerHTML = `<i class="fa-solid fa-gopuram"></i> Bondapalle`;
-        logoSubtitle.innerText = "Vizianagaram District, Andhra Pradesh";
+    if (logoText) {
+        if (window.location.pathname.includes("schools.html")) {
+            logoText.innerHTML = currentLanguage === 'te' 
+                ? `<i class="fa-solid fa-graduation-cap"></i> బొండపల్లి విద్యాసంస్థలు` 
+                : `<i class="fa-solid fa-graduation-cap"></i> Bondapalle Educational Institutions`;
+        } else if (window.location.pathname.includes("phc.html")) {
+            logoText.innerHTML = currentLanguage === 'te' 
+                ? `<i class="fa-solid fa-hospital"></i> బొండపల్లి ప్రాథమిక ఆరోగ్య కేంద్రం` 
+                : `<i class="fa-solid fa-hospital"></i> PHC Bondapalle`;
+        } else {
+            logoText.innerHTML = currentLanguage === 'te' 
+                ? `<i class="fa-solid fa-gopuram"></i> బొండపల్లి` 
+                : `<i class="fa-solid fa-gopuram"></i> Bondapalle`;
+        }
+    }
+    if (logoSubtitle) {
+        if (window.location.pathname.includes("phc.html")) {
+            logoSubtitle.innerText = currentLanguage === 'te' 
+                ? "వైద్య మరియు కుటుంబ సంక్షేమ శాఖ, విజయనగరం జిల్లా" 
+                : "Dept of Health & Family Welfare, Vizianagaram District";
+        } else {
+            logoSubtitle.innerText = currentLanguage === 'te' ? "విజయనగరం జిల్లా, ఆంధ్రప్రదేశ్" : "Vizianagaram District, Andhra Pradesh";
+        }
     }
 
     // Translate regular nodes with data-te / data-en attributes
@@ -204,20 +221,40 @@ function closeSchoolsModal() {
     }
 }
 
-// Close modal on backdrop click or ESC
-document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("schools-modal");
+// Modal Management for Primary Health Centre (PHC)
+function openPhcModal() {
+    const modal = document.getElementById("phc-modal");
     if (modal) {
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+    }
+}
+
+function closePhcModal() {
+    const modal = document.getElementById("phc-modal");
+    if (modal) {
+        modal.classList.remove("active");
+        document.body.style.overflow = "";
+    }
+}
+
+// Close modals on backdrop click or ESC
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".modal-backdrop").forEach(modal => {
         modal.addEventListener("click", (e) => {
             if (e.target === modal) {
-                closeSchoolsModal();
+                modal.classList.remove("active");
+                document.body.style.overflow = "";
             }
         });
-    }
+    });
 
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
-            closeSchoolsModal();
+            document.querySelectorAll(".modal-backdrop.active").forEach(modal => {
+                modal.classList.remove("active");
+                document.body.style.overflow = "";
+            });
         }
     });
 });

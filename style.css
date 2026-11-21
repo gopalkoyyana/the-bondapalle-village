@@ -542,11 +542,89 @@ main {
 }
 
 /* Card Button Actions */
+.grid-3 .card {
+    display: flex;
+    flex-direction: column;
+}
+
 .card-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
-    margin-top: 1.25rem;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+/* PHC specific styling */
+.phc-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.25rem 0;
+}
+
+.phc-stat-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 1.1rem;
+    text-align: center;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.phc-stat-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.phc-stat-icon {
+    font-size: 1.7rem;
+    color: var(--accent);
+    margin-bottom: 0.35rem;
+}
+
+.phc-stat-val {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.phc-stat-lbl {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+.phone-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #10b981;
+    color: #ffffff !important;
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.phone-link-btn:hover {
+    background: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+}
+
+.badge-tag {
+    display: inline-block;
+    padding: 0.2rem 0.55rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: var(--accent-glow);
+    color: var(--accent);
+    margin-right: 0.4rem;
+    margin-bottom: 0.3rem;
 }
 
 .btn-details {
